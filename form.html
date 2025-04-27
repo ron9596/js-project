@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <fieldset>
+                <h2>Registration Form</h2><br>
+                <label>Name:</label>
+                <input type="text" class="input" id="name" placeholder="Enter Your Name"><br><br>
+
+                <label>Email:</label>
+                <input type="text" class="input" id="email" placeholder="Enter Your Email">
+                <span class="error" id="emailError" style="color: red;"></span><br><br>
+
+                <label>Set Password:</label>
+                <input type="password" class="input" id="password" placeholder="Password">
+                <span id="passwordStrength" style="color: green;"></span><br><br>
+
+                <label>Confirm Password:</label>
+                <input type="password" class="input" id="cpassword" placeholder="Confirm Password">
+                <span class="error" id="passwordError" style="color: red;"></span><br><br>
+
+                <label>Age:</label>
+                <input type="number" class="input" id="age" placeholder="Age"><br><br>
+
+                <label>Phone No.:</label>
+                <input type="number" class="input" id="phone"><br><br>
+
+                <label>OTP:</label>
+                <input type="number" class="input" id="otp" placeholder="Enter OTP">
+                <button type="button" class="otp" id="generateOtp">Generate OTP</button><br><br>
+
+                <input type="checkbox" name="accept" id="accept" class="box"> Accept Terms & Conditions<br><br>
+
+                <button type="submit" class="submit" id="submitButton">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
